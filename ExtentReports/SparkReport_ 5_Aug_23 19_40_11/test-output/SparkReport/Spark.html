@@ -1,0 +1,3025 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 5, 2023 07:40:10 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@minProduct</a><a class="dropdown-item" href="#">@standardUser</a><a class="dropdown-item" href="#">@oneProduct</a><a class="dropdown-item" href="#">@lockedUser</a><a class="dropdown-item" href="#">@problemUser</a><a class="dropdown-item" href="#">@twoProduct</a><a class="dropdown-item" href="#">@passedTest</a><a class="dropdown-item" href="#">@allProduct</a><a class="dropdown-item" href="#">@maxProduct</a><a class="dropdown-item" href="#">@glitchUser</a><a class="dropdown-item" href="#">@sauceDemo</a><a class="dropdown-item" href="#">@failedTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SauceDemo</p>
+            <p class="text-sm">
+              <span>7:40:11 PM</span> / <span>00:00:52:733</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SauceDemo</h5>
+<span class='badge badge-success'>08.05.2023 7:40:11 PM</span>
+<span class='badge badge-danger'>08.05.2023 7:41:04 PM</span>
+<span class='badge badge-default'>00:00:52:733</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User Ordering Any One Product</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userLaunchTheBrowser(io.cucumber.datatable.DataTable)">
+                <span>Given User launch the browser</span>
+      <div><table class='markup-table table '><tr><td>chrome</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any One Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGotoSaucedemoLoginPage(io.cucumber.datatable.DataTable)">
+                <span>And User goto Saucedemo login page</span>
+      <div><table class='markup-table table '><tr><td>https://www.saucedemo.com/</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any One Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded2.png' src="../screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userLoginWithValidUsernameAndPassword(io.cucumber.datatable.DataTable)">
+                <span>When User login with valid username and password</span>
+      <div><table class='markup-table table '><tr><td>standard_user</td></tr><tr><td>secret_sauce</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any One Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded3.png' src="../screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userDirectedToTheInventoryPage()">
+                <span>And User directed to the inventory page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any One Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded4.png' src="../screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userAddTheSauceLabsBackpackToTheCart()">
+                <span>And User add the SauceLabs Backpack to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any One Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded5.png' src="../screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickTheCartButton()">
+                <span>And User click the cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any One Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded6.png' src="../screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickCheckoutOption()">
+                <span>And User click checkout option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any One Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded7.png' src="../screenshots/embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGivesDetails(io.cucumber.datatable.DataTable)">
+                <span>And User gives details</span>
+      <div><table class='markup-table table '><tr><td>Sathish</td></tr><tr><td>Kumar</td></tr><tr><td>600042</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any One Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded8.png' src="../screenshots/embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickContinueButton()">
+                <span>And User click continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any One Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded9.png' src="../screenshots/embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickFinishButton()">
+                <span>And User click finish button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any One Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded10.png' src="../screenshots/embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.verifyTheOrderConfirmation()">
+                <span>Then Verify the order confirmation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any One Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded11.png' src="../screenshots/embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userCloseTheBrowser()">
+                <span>And User close the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54718}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54718/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenshotStep(Hooks.java:32)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54718}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54718/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenShotScenario(Hooks.java:37)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log fail-bg mr-2">Fail</span>User Ordering Any Two Products</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userLaunchTheBrowser(io.cucumber.datatable.DataTable)">
+                <span>Given User launch the browser</span>
+      <div><table class='markup-table table '><tr><td>chrome</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any Two Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded12.png' src="../screenshots/embedded12.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGotoSaucedemoLoginPage(io.cucumber.datatable.DataTable)">
+                <span>And User goto Saucedemo login page</span>
+      <div><table class='markup-table table '><tr><td>https://www.saucedemo.com/</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any Two Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded13.png' src="../screenshots/embedded13.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userLoginWithValidUsernameAndPassword(io.cucumber.datatable.DataTable)">
+                <span>When User login with valid username and password</span>
+      <div><table class='markup-table table '><tr><td>standard_user</td></tr><tr><td>secret_sauce</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any Two Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded14.png' src="../screenshots/embedded14.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userDirectedToTheInventoryPage()">
+                <span>And User directed to the inventory page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any Two Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded15.png' src="../screenshots/embedded15.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userAddsTheSauceLabsBackpackAndSauceLabsBoultTshirtToTheCart()">
+                <span>And User adds the Sauce Labs Backpack and SauceLabs Boult Tshirt to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any Two Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded16.png' src="../screenshots/embedded16.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickTheCartButton()">
+                <span>And User click the cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any Two Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded17.png' src="../screenshots/embedded17.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickCheckoutOption()">
+                <span>And User click checkout option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any Two Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded18.png' src="../screenshots/embedded18.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGivesDetails(io.cucumber.datatable.DataTable)">
+                <span>And User gives details</span>
+      <div><table class='markup-table table '><tr><td>Sathish</td></tr><tr><td>Kumar</td></tr><tr><td>600042</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any Two Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded19.png' src="../screenshots/embedded19.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickContinueButton()">
+                <span>And User click continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any Two Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded20.png' src="../screenshots/embedded20.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickFinishButton()">
+                <span>And User click finish button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any Two Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded21.png' src="../screenshots/embedded21.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.verifyTheOrderConfirmation()">
+                <span>Then Verify the order confirmation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering Any Two Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded22.png' src="../screenshots/embedded22.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userCloseTheBrowser()">
+                <span>And User close the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54739/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenshotStep(Hooks.java:32)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54739/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenShotScenario(Hooks.java:37)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="54"><span class="badge log fail-bg mr-2">Fail</span>User Ordering All The Products</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userLaunchTheBrowser(io.cucumber.datatable.DataTable)">
+                <span>Given User launch the browser</span>
+      <div><table class='markup-table table '><tr><td>chrome</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering All The Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded23.png' src="../screenshots/embedded23.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGotoSaucedemoLoginPage(io.cucumber.datatable.DataTable)">
+                <span>And User goto Saucedemo login page</span>
+      <div><table class='markup-table table '><tr><td>https://www.saucedemo.com/</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering All The Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded24.png' src="../screenshots/embedded24.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userLoginWithValidUsernameAndPassword(io.cucumber.datatable.DataTable)">
+                <span>When User login with valid username and password</span>
+      <div><table class='markup-table table '><tr><td>standard_user</td></tr><tr><td>secret_sauce</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering All The Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded25.png' src="../screenshots/embedded25.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userDirectedToTheInventoryPage()">
+                <span>And User directed to the inventory page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering All The Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded26.png' src="../screenshots/embedded26.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userAddsAllTheProductsToTheCart()">
+                <span>And User adds all the products to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering All The Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded27.png' src="../screenshots/embedded27.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickTheCartButton()">
+                <span>And User click the cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering All The Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded28.png' src="../screenshots/embedded28.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickCheckoutOption()">
+                <span>And User click checkout option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering All The Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded29.png' src="../screenshots/embedded29.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGivesDetails(io.cucumber.datatable.DataTable)">
+                <span>And User gives details</span>
+      <div><table class='markup-table table '><tr><td>Sathish</td></tr><tr><td>Kumar</td></tr><tr><td>600042</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering All The Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded30.png' src="../screenshots/embedded30.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickContinueButton()">
+                <span>And User click continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering All The Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded31.png' src="../screenshots/embedded31.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickFinishButton()">
+                <span>And User click finish button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering All The Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded32.png' src="../screenshots/embedded32.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.verifyTheOrderConfirmation()">
+                <span>Then Verify the order confirmation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Ordering All The Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded33.png' src="../screenshots/embedded33.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userCloseTheBrowser()">
+                <span>And User close the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54761}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54761/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenshotStep(Hooks.java:32)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54761}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54761/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenShotScenario(Hooks.java:37)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="80"><span class="badge log fail-bg mr-2">Fail</span>Order Sauce Labs Maximum Priced Product</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userLaunchTheBrowser(io.cucumber.datatable.DataTable)">
+                <span>Given User launch the browser</span>
+      <div><table class='markup-table table '><tr><td>chrome</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Maximum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded34.png' src="../screenshots/embedded34.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGotoSaucedemoLoginPage(io.cucumber.datatable.DataTable)">
+                <span>And User goto Saucedemo login page</span>
+      <div><table class='markup-table table '><tr><td>https://www.saucedemo.com/</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Maximum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded35.png' src="../screenshots/embedded35.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userLoginWithValidUsernameAndPassword(io.cucumber.datatable.DataTable)">
+                <span>When User login with valid username and password</span>
+      <div><table class='markup-table table '><tr><td>standard_user</td></tr><tr><td>secret_sauce</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Maximum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded36.png' src="../screenshots/embedded36.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userDirectedToTheInventoryPage()">
+                <span>And User directed to the inventory page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Maximum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded37.png' src="../screenshots/embedded37.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userAddTheHighValueProductToTheCart()">
+                <span>And User add the high value product to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Maximum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded38.png' src="../screenshots/embedded38.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickTheCartButton()">
+                <span>And User click the cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Maximum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded39.png' src="../screenshots/embedded39.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickCheckoutOption()">
+                <span>And User click checkout option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Maximum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded40.png' src="../screenshots/embedded40.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGivesDetails(io.cucumber.datatable.DataTable)">
+                <span>And User gives details</span>
+      <div><table class='markup-table table '><tr><td>Sathish</td></tr><tr><td>Kumar</td></tr><tr><td>600042</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Maximum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded41.png' src="../screenshots/embedded41.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickContinueButton()">
+                <span>And User click continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Maximum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded42.png' src="../screenshots/embedded42.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickFinishButton()">
+                <span>And User click finish button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Maximum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded43.png' src="../screenshots/embedded43.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.verifyTheOrderConfirmation()">
+                <span>Then Verify the order confirmation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Maximum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded44.png' src="../screenshots/embedded44.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userCloseTheBrowser()">
+                <span>And User close the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54781/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenshotStep(Hooks.java:32)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54781/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenShotScenario(Hooks.java:37)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="106"><span class="badge log fail-bg mr-2">Fail</span>Order Sauce Labs Minimum Priced Product</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userLaunchTheBrowser(io.cucumber.datatable.DataTable)">
+                <span>Given User launch the browser</span>
+      <div><table class='markup-table table '><tr><td>chrome</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Minimum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded45.png' src="../screenshots/embedded45.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGotoSaucedemoLoginPage(io.cucumber.datatable.DataTable)">
+                <span>And User goto Saucedemo login page</span>
+      <div><table class='markup-table table '><tr><td>https://www.saucedemo.com/</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Minimum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded46.png' src="../screenshots/embedded46.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userLoginWithValidUsernameAndPassword(io.cucumber.datatable.DataTable)">
+                <span>When User login with valid username and password</span>
+      <div><table class='markup-table table '><tr><td>standard_user</td></tr><tr><td>secret_sauce</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Minimum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded47.png' src="../screenshots/embedded47.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userDirectedToTheInventoryPage()">
+                <span>And User directed to the inventory page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Minimum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded48.png' src="../screenshots/embedded48.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userAddTheLowValueProductToTheCart()">
+                <span>And User add the low value product to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Minimum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded49.png' src="../screenshots/embedded49.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickTheCartButton()">
+                <span>And User click the cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Minimum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded50.png' src="../screenshots/embedded50.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickCheckoutOption()">
+                <span>And User click checkout option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Minimum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded51.png' src="../screenshots/embedded51.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGivesDetails(io.cucumber.datatable.DataTable)">
+                <span>And User gives details</span>
+      <div><table class='markup-table table '><tr><td>Sathish</td></tr><tr><td>Kumar</td></tr><tr><td>600042</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Minimum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded52.png' src="../screenshots/embedded52.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickContinueButton()">
+                <span>And User click continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Minimum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded53.png' src="../screenshots/embedded53.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickFinishButton()">
+                <span>And User click finish button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Minimum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded54.png' src="../screenshots/embedded54.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.verifyTheOrderConfirmation()">
+                <span>Then Verify the order confirmation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>Order Sauce Labs Minimum Priced Product
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded55.png' src="../screenshots/embedded55.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userCloseTheBrowser()">
+                <span>And User close the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54802}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54802/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenshotStep(Hooks.java:32)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54802}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54802/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenShotScenario(Hooks.java:37)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="132"><span class="badge log fail-bg mr-2">Fail</span>User Is Locked Out</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userLaunchTheBrowser(io.cucumber.datatable.DataTable)">
+                <span>Given User launch the browser</span>
+      <div><table class='markup-table table '><tr><td>chrome</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Is Locked Out
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded56.png' src="../screenshots/embedded56.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGotoSaucedemoLoginPage(io.cucumber.datatable.DataTable)">
+                <span>And User goto Saucedemo login page</span>
+      <div><table class='markup-table table '><tr><td>https://www.saucedemo.com/</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Is Locked Out
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded57.png' src="../screenshots/embedded57.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userLoginWithValidUsernameAndPassword(io.cucumber.datatable.DataTable)">
+                <span>When User login with valid username and password</span>
+      <div><table class='markup-table table '><tr><td>locked_out_user</td></tr><tr><td>secret_sauce</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Is Locked Out
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded58.png' src="../screenshots/embedded58.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.stepdefinition.SauceDemoStepDef.userDirectedToTheInventoryPage()">
+                <span>And User directed to the inventory page</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<...//www.saucedemo.com/[]> but was:<...//www.saucedemo.com/[inventory.html]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.stepdefinition.SauceDemoStepDef.userDirectedToTheInventoryPage(SauceDemoStepDef.java:45)
+	at ✽.User directed to the inventory page(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/SauceDemo.feature:117)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Is Locked Out
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded59.png' src="../screenshots/embedded59.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userAddTheSauceLabsBackpackToTheCart()">
+                <span>And User add the SauceLabs Backpack to the cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userClickTheCartButton()">
+                <span>And User click the cart button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userClickCheckoutOption()">
+                <span>And User click checkout option</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGivesDetails(io.cucumber.datatable.DataTable)">
+                <span>And User gives details</span>
+      <div><table class='markup-table table '><tr><td>Sathish</td></tr><tr><td>Kumar</td></tr><tr><td>600042</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userClickContinueButton()">
+                <span>And User click continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userClickFinishButton()">
+                <span>And User click finish button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.verifyTheOrderConfirmation()">
+                <span>Then Verify the order confirmation</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userCloseTheBrowser()">
+                <span>And User close the browser</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+      <div>User Is Locked Out
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded60.png' src="../screenshots/embedded60.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="158"><span class="badge log fail-bg mr-2">Fail</span>User Facing Performance Glitch While login</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userLaunchTheBrowser(io.cucumber.datatable.DataTable)">
+                <span>Given User launch the browser</span>
+      <div><table class='markup-table table '><tr><td>chrome</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Performance Glitch While login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded61.png' src="../screenshots/embedded61.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGotoSaucedemoLoginPage(io.cucumber.datatable.DataTable)">
+                <span>And User goto Saucedemo login page</span>
+      <div><table class='markup-table table '><tr><td>https://www.saucedemo.com/</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Performance Glitch While login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded62.png' src="../screenshots/embedded62.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userLoginWithValidUsernameAndPassword(io.cucumber.datatable.DataTable)">
+                <span>When User login with valid username and password</span>
+      <div><table class='markup-table table '><tr><td>performance_glitch_user</td></tr><tr><td>secret_sauce</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Performance Glitch While login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded63.png' src="../screenshots/embedded63.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userDirectedToTheInventoryPage()">
+                <span>And User directed to the inventory page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Performance Glitch While login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded64.png' src="../screenshots/embedded64.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userAddTheSauceLabsBackpackToTheCart()">
+                <span>And User add the SauceLabs Backpack to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Performance Glitch While login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded65.png' src="../screenshots/embedded65.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickTheCartButton()">
+                <span>And User click the cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Performance Glitch While login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded66.png' src="../screenshots/embedded66.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickCheckoutOption()">
+                <span>And User click checkout option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Performance Glitch While login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded67.png' src="../screenshots/embedded67.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGivesDetails(io.cucumber.datatable.DataTable)">
+                <span>And User gives details</span>
+      <div><table class='markup-table table '><tr><td>Sathish</td></tr><tr><td>Kumar</td></tr><tr><td>600042</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Performance Glitch While login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded68.png' src="../screenshots/embedded68.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickContinueButton()">
+                <span>And User click continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Performance Glitch While login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded69.png' src="../screenshots/embedded69.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userClickFinishButton()">
+                <span>And User click finish button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Performance Glitch While login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded70.png' src="../screenshots/embedded70.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.verifyTheOrderConfirmation()">
+                <span>Then Verify the order confirmation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Performance Glitch While login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded71.png' src="../screenshots/embedded71.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userCloseTheBrowser()">
+                <span>And User close the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54846}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54846/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenshotStep(Hooks.java:32)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54846}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54846/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenShotScenario(Hooks.java:37)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="184"><span class="badge log fail-bg mr-2">Fail</span>User Facing Problem In The Inventory Page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userLaunchTheBrowser(io.cucumber.datatable.DataTable)">
+                <span>Given User launch the browser</span>
+      <div><table class='markup-table table '><tr><td>chrome</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Problem In The Inventory Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded72.png' src="../screenshots/embedded72.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGotoSaucedemoLoginPage(io.cucumber.datatable.DataTable)">
+                <span>And User goto Saucedemo login page</span>
+      <div><table class='markup-table table '><tr><td>https://www.saucedemo.com/</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Problem In The Inventory Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded73.png' src="../screenshots/embedded73.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.SauceDemoStepDef.userLoginWithValidUsernameAndPassword(io.cucumber.datatable.DataTable)">
+                <span>When User login with valid username and password</span>
+      <div><table class='markup-table table '><tr><td>problem_user</td></tr><tr><td>secret_sauce</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Problem In The Inventory Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded74.png' src="../screenshots/embedded74.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.stepdefinition.SauceDemoStepDef.userDirectedToTheInventoryPage()">
+                <span>And User directed to the inventory page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Values should be different. Actual: https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failEquals(Assert.java:185)
+	at org.junit.Assert.assertNotEquals(Assert.java:161)
+	at org.junit.Assert.assertNotEquals(Assert.java:175)
+	at com.stepdefinition.SauceDemoStepDef.userDirectedToTheInventoryPage(SauceDemoStepDef.java:48)
+	at ✽.User directed to the inventory page(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/SauceDemo.feature:159)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+      <div>User Facing Problem In The Inventory Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded75.png' src="../screenshots/embedded75.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userAddTheSauceLabsBackpackToTheCart()">
+                <span>And User add the SauceLabs Backpack to the cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userClickTheCartButton()">
+                <span>And User click the cart button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userClickCheckoutOption()">
+                <span>And User click checkout option</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SD_dataTablesStepDef.userGivesDetails(io.cucumber.datatable.DataTable)">
+                <span>And User gives details</span>
+      <div><table class='markup-table table '><tr><td>Sathish</td></tr><tr><td>Kumar</td></tr><tr><td>600042</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userClickContinueButton()">
+                <span>And User click continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userClickFinishButton()">
+                <span>And User click finish button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.verifyTheOrderConfirmation()">
+                <span>Then Verify the order confirmation</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepdefinition.SauceDemoStepDef.userCloseTheBrowser()">
+                <span>And User close the browser</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+      <div>User Facing Problem In The Inventory Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded76.png' src="../screenshots/embedded76.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.junit.ComparisonFailure</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.junit.ComparisonFailure</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='139'>And User directed to the inventory page</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Is Locked Out.And User directed to the inventory page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>12</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchSessionException</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchSessionException</h4>
+<span status="fail" class='badge log badge-danger'>12 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any One Product.com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any One Product.com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any Two Products.com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any Two Products.com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='78'>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering All The Products.com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='79'>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering All The Products.com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='104'>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Maximum Priced Product.com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='105'>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Maximum Priced Product.com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='130'>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Minimum Priced Product.com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='131'>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Minimum Priced Product.com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:41:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='182'>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Facing Performance Glitch While login.com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:41:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='183'>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Facing Performance Glitch While login.com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:41:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='191'>And User directed to the inventory page</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Facing Problem In The Inventory Page.And User directed to the inventory page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">12</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@minProduct</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@minProduct</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Order Sauce Labs Minimum Priced Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Minimum Priced Product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@standardUser</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@standardUser</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User Ordering Any One Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any One Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>User Ordering Any Two Products</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any Two Products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>User Ordering All The Products</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering All The Products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>Order Sauce Labs Maximum Priced Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Maximum Priced Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Order Sauce Labs Minimum Priced Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Minimum Priced Product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@oneProduct</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@oneProduct</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User Ordering Any One Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any One Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='132'>User Is Locked Out</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Is Locked Out</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='158'>User Facing Performance Glitch While login</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Facing Performance Glitch While login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:41:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='184'>User Facing Problem In The Inventory Page</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Facing Problem In The Inventory Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@lockedUser</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@lockedUser</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='132'>User Is Locked Out</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Is Locked Out</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@problemUser</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@problemUser</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:41:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='184'>User Facing Problem In The Inventory Page</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Facing Problem In The Inventory Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@twoProduct</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@twoProduct</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>User Ordering Any Two Products</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any Two Products</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@passedTest</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@passedTest</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User Ordering Any One Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any One Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>User Ordering Any Two Products</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any Two Products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>User Ordering All The Products</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering All The Products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>Order Sauce Labs Maximum Priced Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Maximum Priced Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Order Sauce Labs Minimum Priced Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Minimum Priced Product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@allProduct</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@allProduct</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>User Ordering All The Products</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering All The Products</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@maxProduct</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@maxProduct</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>Order Sauce Labs Maximum Priced Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Maximum Priced Product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@glitchUser</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@glitchUser</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='158'>User Facing Performance Glitch While login</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Facing Performance Glitch While login</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>8</span>
+</span>
+<p class="name">@sauceDemo</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sauceDemo</h4>
+<span status="fail" class='badge log badge-danger'>8 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User Ordering Any One Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any One Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>User Ordering Any Two Products</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering Any Two Products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>User Ordering All The Products</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Ordering All The Products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>Order Sauce Labs Maximum Priced Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Maximum Priced Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Order Sauce Labs Minimum Priced Product</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.Order Sauce Labs Minimum Priced Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='132'>User Is Locked Out</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Is Locked Out</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='158'>User Facing Performance Glitch While login</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Facing Performance Glitch While login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:41:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='184'>User Facing Problem In The Inventory Page</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Facing Problem In The Inventory Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@failedTest</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@failedTest</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='132'>User Is Locked Out</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Is Locked Out</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:40:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='158'>User Facing Performance Glitch While login</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Facing Performance Glitch While login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:41:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='184'>User Facing Problem In The Inventory Page</a>
+<div class="">
+<span class="badge badge-default">SauceDemo.User Facing Problem In The Inventory Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 5, 2023 07:40:10 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 5, 2023 07:41:04 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>8</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='83%'><b>154</b> steps passed</small></div>
+<div>
+<small data-tooltip='7%'><b>14</b> steps failed,
+<b>16</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"SauceDemo":52.733
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@minProduct</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@standardUser</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@oneProduct</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@lockedUser</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@problemUser</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@twoProduct</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@passedTest</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@allProduct</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@maxProduct</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@glitchUser</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@sauceDemo</td>
+<td>0</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@failedTest</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 8,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 154,
+failGrandChild: 14,
+warningGrandChild: 0,
+skipGrandChild: 16,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

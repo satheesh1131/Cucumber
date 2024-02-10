@@ -1,0 +1,1371 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title></title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+			
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+        <a href="#!" class="brand-logo black"><img src="http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'></span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Jul 22, 2023 08:06:17 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@signup</a></li>
+					<li><a href='#'>@monitor</a></li>
+					<li><a href='#'>@order</a></li>
+					<li><a href='#'>@login</a></li>
+					<li><a href='#'>@asus</a></li>
+					<li><a href='#'>@demoBlaze</a></li>
+					<li><a href='#'>@apple</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Features</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
+                    <span class='strong'>0</span> features passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Scenarios</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='child-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='25%'>
+                    <span class='strong'>1</span> scenarios passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='75%'>
+                    3</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Steps</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='grandchild-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='43%'>
+                    <span class='strong'>16</span> steps passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='18%'>
+                    7</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='37%'>
+                    14</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>DemoBlaze</span>
+						<span class='test-time'>Jul 22, 2023 08:06:17 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='2' status='pass'>
+
+	<span class='duration right label'>00 00 12.518</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User signup</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@signup</span>
+				<span class='category label'>@demoBlaze</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userGoToDemoBlazeHomePage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User go to demoBlaze home page</div>
+
+
+		</li>
+		<li test-id='5' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">User signup</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded1.png' src='../screenshots/embedded1.png'>
+					</div>
+		</li>
+		<li test-id='6' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClickSignupOption())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User click signup option</div>
+
+
+		</li>
+		<li test-id='7' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">User signup</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded2.png' src='../screenshots/embedded2.png'>
+					</div>
+		</li>
+		<li test-id='8' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userEntersTheSignupCredentials(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters the signup credentials</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>sathish88888</td></tr><tr><td>sathish@12345</td></tr></table></div>
+		</li>
+		<li test-id='9' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">User signup</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded3.png' src='../screenshots/embedded3.png'>
+					</div>
+		</li>
+		<li test-id='10' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClickSignupButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User click signup button</div>
+
+
+		</li>
+		<li test-id='11' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">User signup</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded4.png' src='../screenshots/embedded4.png'>
+					</div>
+		</li>
+		<li test-id='12' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userAcceptAlert())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User accept alert</div>
+
+
+		</li>
+		<li test-id='13' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">User signup</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded5.png' src='../screenshots/embedded5.png'>
+					</div>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='16' status='fail'>
+
+	<span class='duration right label'>00 00 06.236</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: User login</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@login</span>
+				<span class='category label'>@demoBlaze</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='18' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userGoToDemoBlazeHomePage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User go to demoBlaze home page</div>
+
+
+		</li>
+		<li test-id='19' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">User login</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded6.png' src='../screenshots/embedded6.png'>
+					</div>
+		</li>
+		<li test-id='20' class='node when Fail' status='Fail'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClickLoginOption())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When User click login option</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=css selector, value=a#login2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60009/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.resources.BaseClass.click(BaseClass.java:419)
+	at com.stepdefinition.DemoBlazeStepDef.userClickLoginOption(DemoBlazeStepDef.java:50)
+	at ✽.User click login option(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/DemoBlaze.feature:15)
+</textarea>
+		</li>
+		<li test-id='21' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">User login</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded7.png' src='../screenshots/embedded7.png'>
+					</div>
+		</li>
+		<li test-id='22' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userEntersTheLoginCredentials(io.cucumber.datatable.DataTable))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User enters the login credentials</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>sathish88888</td></tr><tr><td>sathish@12345</td></tr></table></div>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='24' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClickLoginButton())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User click login button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='26' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">User login</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded8.png' src='../screenshots/embedded8.png'>
+					</div>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='27' status='fail'>
+
+	<span class='duration right label'>00 00 01.662</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: User orders apple monitor</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@apple</span>
+				<span class='category label'>@demoBlaze</span>
+				<span class='category label'>@order</span>
+				<span class='category label'>@monitor</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='28' class='node given Fail' status='Fail'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClicksMonitorOption())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User clicks monitor option</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//a[text()='Monitors']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60009/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:52)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:477)
+	at com.resources.BaseClass.jsScrollByElement(BaseClass.java:599)
+	at com.stepdefinition.DemoBlazeStepDef.userClicksMonitorOption(DemoBlazeStepDef.java:59)
+	at ✽.User clicks monitor option(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/DemoBlaze.feature:22)
+</textarea>
+		</li>
+		<li test-id='29' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">User orders apple monitor</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded9.png' src='../screenshots/embedded9.png'>
+					</div>
+		</li>
+		<li test-id='30' class='node when Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userSelectAppleMonitor())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User select apple monitor</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='32' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userAddsAppleMonitorToCart())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User adds apple monitor to cart</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='34' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClicksCartButton())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks cart button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='36' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClicksPlaceOrderButton())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks place order button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='38' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userEntersPersonalDetails(io.cucumber.datatable.DataTable))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User enters personal details</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>SathishKumar</td></tr><tr><td>India</td></tr><tr><td>Chennai</td></tr><tr><td>3579512584561234</td></tr><tr><td>03</td></tr><tr><td>2025</td></tr></table></div>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='40' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClicksPurchaseButton())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User clicks purchase button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='42' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">User orders apple monitor</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded10.png' src='../screenshots/embedded10.png'>
+					</div>
+		</li>
+		<li test-id='43' class='node * Fail' status='Fail'>
+			<div class="step-name" title="(AFTER)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>com.hooks.Hooks.orderVerification()</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//div[@class='sweet-alert  showSweetAlert visible']//h2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60009/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.resources.BaseClass.getText(BaseClass.java:442)
+	at com.hooks.Hooks.orderVerification(Hooks.java:22)
+</textarea>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='45' status='fail'>
+
+	<span class='duration right label'>00 00 00.016</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: User orders asus monitor</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@asus</span>
+				<span class='category label'>@demoBlaze</span>
+				<span class='category label'>@order</span>
+				<span class='category label'>@monitor</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='46' class='node given Fail' status='Fail'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClicksMonitorOption())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User clicks monitor option</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, refresh {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60028/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:992)
+	at com.resources.BaseClass.reload(BaseClass.java:137)
+	at com.stepdefinition.DemoBlazeStepDef.userClicksMonitorOption(DemoBlazeStepDef.java:58)
+	at ✽.User clicks monitor option(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/DemoBlaze.feature:37)
+</textarea>
+		</li>
+		<li test-id='47' class='node * Fail' status='Fail'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60028/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenshotStep(Hooks.java:32)
+</textarea>
+		</li>
+		<li test-id='48' class='node when Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userSelectAsusMonitor())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User select asus monitor</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='50' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userAddsAsusMonitorToCart())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User adds asus monitor to cart</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='52' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClicksCartButton())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks cart button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='54' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClicksPlaceOrderButton())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User clicks place order button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='56' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userEntersPersonalDetails(io.cucumber.datatable.DataTable))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User enters personal details</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>SathishKumar</td></tr><tr><td>India</td></tr><tr><td>Chennai</td></tr><tr><td>3579512584561234</td></tr><tr><td>03</td></tr><tr><td>2025</td></tr></table></div>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='58' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(com.stepdefinition.DemoBlazeStepDef.userClicksPurchaseButton())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User clicks purchase button</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='60' class='node * Fail' status='Fail'>
+			<div class="step-name" title="(AFTER)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60028/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at com.resources.BaseClass.screenShot(BaseClass.java:239)
+	at com.hooks.Hooks.screenShotScenario(Hooks.java:37)
+</textarea>
+		</li>
+		<li test-id='61' class='node * Fail' status='Fail'>
+			<div class="step-name" title="(AFTER)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>com.hooks.Hooks.orderVerification()</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//div[@class='sweet-alert  showSweetAlert visible']//h2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60009/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.resources.BaseClass.getText(BaseClass.java:442)
+	at com.hooks.Hooks.orderVerification(Hooks.java:22)
+</textarea>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><div id='category-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='category-collection' class='category-collection'>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@signup</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 22, 2023 08:06:17 PM</td>
+										<td class='linked' test-id='2'>User signup</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@monitor</span>
+						<span class='category-status right'>
+						<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 22, 2023 08:06:36 PM</td>
+										<td class='linked' test-id='27'>User orders apple monitor</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 22, 2023 08:06:38 PM</td>
+										<td class='linked' test-id='45'>User orders asus monitor</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@order</span>
+						<span class='category-status right'>
+						<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 22, 2023 08:06:36 PM</td>
+										<td class='linked' test-id='27'>User orders apple monitor</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 22, 2023 08:06:38 PM</td>
+										<td class='linked' test-id='45'>User orders asus monitor</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@login</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 22, 2023 08:06:30 PM</td>
+										<td class='linked' test-id='16'>User login</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@asus</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 22, 2023 08:06:38 PM</td>
+										<td class='linked' test-id='45'>User orders asus monitor</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@demoBlaze</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 22, 2023 08:06:17 PM</td>
+										<td class='linked' test-id='2'>User signup</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 22, 2023 08:06:30 PM</td>
+										<td class='linked' test-id='16'>User login</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 22, 2023 08:06:36 PM</td>
+										<td class='linked' test-id='27'>User orders apple monitor</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 22, 2023 08:06:38 PM</td>
+										<td class='linked' test-id='45'>User orders asus monitor</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@apple</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 22, 2023 08:06:36 PM</td>
+										<td class='linked' test-id='27'>User orders apple monitor</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchSessionException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>7</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 22, 2023 08:06:36 PM</td>
+										<td class='linked' test-id='20'>When User click login option</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=css selector, value=a#login2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60009/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.resources.BaseClass.click(BaseClass.java:419)
+	at com.stepdefinition.DemoBlazeStepDef.userClickLoginOption(DemoBlazeStepDef.java:50)
+	at ✽.User click login option(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/DemoBlaze.feature:15)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Jul 22, 2023 08:06:36 PM</td>
+										<td class='linked' test-id='28'>Given User clicks monitor option</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=css selector, value=a#login2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60009/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.resources.BaseClass.click(BaseClass.java:419)
+	at com.stepdefinition.DemoBlazeStepDef.userClickLoginOption(DemoBlazeStepDef.java:50)
+	at ✽.User click login option(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/DemoBlaze.feature:15)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Jul 22, 2023 08:06:38 PM</td>
+										<td class='linked' test-id='43'>com.hooks.Hooks.orderVerification()</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=css selector, value=a#login2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60009/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.resources.BaseClass.click(BaseClass.java:419)
+	at com.stepdefinition.DemoBlazeStepDef.userClickLoginOption(DemoBlazeStepDef.java:50)
+	at ✽.User click login option(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/DemoBlaze.feature:15)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Jul 22, 2023 08:06:38 PM</td>
+										<td class='linked' test-id='46'>Given User clicks monitor option</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=css selector, value=a#login2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60009/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.resources.BaseClass.click(BaseClass.java:419)
+	at com.stepdefinition.DemoBlazeStepDef.userClickLoginOption(DemoBlazeStepDef.java:50)
+	at ✽.User click login option(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/DemoBlaze.feature:15)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Jul 22, 2023 08:06:38 PM</td>
+										<td class='linked' test-id='47'>com.hooks.Hooks.screenshotStep(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=css selector, value=a#login2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60009/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.resources.BaseClass.click(BaseClass.java:419)
+	at com.stepdefinition.DemoBlazeStepDef.userClickLoginOption(DemoBlazeStepDef.java:50)
+	at ✽.User click login option(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/DemoBlaze.feature:15)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Jul 22, 2023 08:06:38 PM</td>
+										<td class='linked' test-id='60'>com.hooks.Hooks.screenShotScenario(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=css selector, value=a#login2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60009/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.resources.BaseClass.click(BaseClass.java:419)
+	at com.stepdefinition.DemoBlazeStepDef.userClickLoginOption(DemoBlazeStepDef.java:50)
+	at ✽.User click login option(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/DemoBlaze.feature:15)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Jul 22, 2023 08:06:38 PM</td>
+										<td class='linked' test-id='61'>com.hooks.Hooks.orderVerification()</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=css selector, value=a#login2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60009/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.resources.BaseClass.click(BaseClass.java:419)
+	at com.stepdefinition.DemoBlazeStepDef.userClickLoginOption(DemoBlazeStepDef.java:50)
+	at ✽.User click login option(file:///C:/eclipse%20workspace/Cucumber/src/test/java/com/feature/DemoBlaze.feature:15)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>1</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>4</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>37</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Jul 22, 2023 08:06:17 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Jul 22, 2023 08:06:38 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>00 00 21.127</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Skipped</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>@signup</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@monitor</td>
+							<td>0</td>
+							<td>2</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@order</td>
+							<td>0</td>
+							<td>2</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@login</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@asus</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@demoBlaze</td>
+							<td>1</td>
+							<td>3</td>
+							<td>0</td>
+							<td>
+									25%
+							</td>
+						</tr>
+						<tr>
+							<td>@apple</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 1,
+				passParent: 0,
+				failParent: 1,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				childCount: 4,
+				passChild: 1,
+				failChild: 3,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				grandChildCount: 37,
+				passGrandChild: 16,
+				failGrandChild: 7,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 14,
+				infoGrandChild: 0,
+			};
+			</script>
+		
+		<script>
+			var timeline = {
+			        "DemoBlaze":20.459
+			};
+		</script>
+		
+		  <script src='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		
+		
+		<script type='text/javascript'>
+				
+		</script> 
+
+	</body>
+</html>
